@@ -97,7 +97,3 @@ Every run appends a line to `logs/backup.log`, e.g.:
 2. It checks the exit code of the `tar` command to determine success or failure, and logs the result.
 3. It searches for old backup archives (older than `RETENTION_DAYS`) using `find` and deletes them.
 4. `install-cron.sh` builds a cron schedule line and appends it to the user's crontab without overwriting existing entries.
-
-## License
-
-MIT
